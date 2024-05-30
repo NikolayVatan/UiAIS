@@ -1,5 +1,6 @@
 import time
 
+
 def guess_the_number():
     # Генерируем случайное число от 1 до 100
     number_to_guess = (time.time() * 1000) % 100 + 1
@@ -24,9 +25,10 @@ def guess_the_number():
                 print("Слишком много! Попробуйте еще раз.")
             else:
                 guessed = True
-                print(f"Поздравляю! Вы угадали число {number_to_guess} за {attempts} попыток.")
+                print("Поздравляю! Вы угадали число!")
         else:
             print("Пожалуйста, введите корректное число.")
+
 
 if __name__ == "__main__":
     guess_the_number()
